@@ -1,0 +1,14 @@
+2314=Acadia
+373=Envoy
+374=Jimmy
+375=Safary
+376=Savana
+2520=Sierra
+377=Sonoma
+1669=Starcraft
+378=Suburban
+2423=Terrain
+379=Treker
+380=Typhoon
+381=Vandura
+382=Yukon

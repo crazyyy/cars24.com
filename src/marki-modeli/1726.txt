@@ -1,0 +1,14 @@
+2460=Coolbear
+1731=Deer
+2639=H3
+2640=H6
+1727=Hover
+2017=Hover Pi
+2638=M4
+1730=Pegasus
+2019=Peri
+1728=Safe
+1729=Sing
+2572=SoCool
+2417=Voleex
+2018=Wingle

@@ -1,0 +1,90 @@
+.contactH1 {
+    color: #164f7f !important;
+    font-size: 36px !important;
+    line-height: 50px !important;
+}
+.contactH1 > span {
+    color: #1e7ac7;
+}
+.contactHdr {
+    color: #151515;
+    font-size: 21px;
+	text-transform:uppercase;
+	 
+}
+.contactConMain span{ display:inline-block;}
+
+.contactAdd{ font-size:19px; color:#727272;  text-transform:uppercase;}
+
+.hrcontact {
+    border: 1px solid #d8d8d8;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 100px;
+}
+
+.contactNmbr{color:#ed7119;  font-size:19px;}
+
+.contactemail{ color:#18598b;font-size:19px;}
+
+.mainHeroBnrConNew24 {
+    clear: both;
+    height: 1474px;
+    position: relative;
+}
+
+.heroBgCon2New24 {
+    background: #f7f7f7 url("../images/hero-banner2.jpg") no-repeat scroll 50% -1px;
+    height: 1474px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.privacy-policy{ font-size:16px; color:#716565;}
+
+
+.privacy-policy h1{ color:#175b8e; font-size:30px; height:110px; line-height:110px;}
+
+.orangetext{color:#f97600}
+.blueTextP{color:#427fb7;}
+
+.font20{ font-size:20xpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+h1.contactH1 {
+    color: #196db3;
+    font-size: 24px;
+    height: auto;
+    line-height: 36px !important;
+    text-align: center;
+}
+.mainHeroBnrConNew24 {
+    clear: both;
+    height: 100%;
+    position: relative;
+}
+.heroBgCon2New24 {
+    background: #f7f7f7 none repeat scroll 0 0;
+    height: 100%;
+    position: relative;
+    top: inherit;
+    width: 100%;
+    z-index: 100;
+}
+
+}
+

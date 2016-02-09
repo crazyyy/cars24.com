@@ -1,0 +1,11 @@
+1843=1300
+1844=1310
+1845=1325
+1846=1410
+2446=Duster
+2382=Lodgy
+1842=Logan
+2010=Logan MCV
+1847=Nova
+2495=Sandero
+1848=Solenza

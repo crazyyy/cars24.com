@@ -1,0 +1,8 @@
+1626=228
+1627=3200GT
+1628=Coupe Cambiocorsa
+1629=Ghibli
+2565=GranSport
+2317=Gran Turismo
+1672=M138 Spyder
+1630=Quattroporte

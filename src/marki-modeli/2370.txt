@@ -1,0 +1,9 @@
+2377=B40
+2378=B50
+2379=Beijing
+2372=Fenix
+2375=Hiace Minibus
+2373=Land King
+2376=Luling Pick-Up
+2374=Reach CUV
+2371=Tonik

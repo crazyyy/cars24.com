@@ -1,0 +1,11 @@
+1968=Actyon
+1598=Chairman
+1599=Family
+1600=Istana
+1601=Kallista
+1602=Korando
+1603=Kyron
+1604=Musso
+1605=Rexton
+2037=Rexton II
+1606=Rodius

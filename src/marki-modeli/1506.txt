@@ -1,0 +1,16 @@
+1507=Apollo
+1508=Century
+1509=Electra Wagon
+2447=Enclave
+2570=Encore
+1510=GL8
+2536=LaCrosse
+1511=Le Sabre
+1512=Lucerne
+1513=Park Avenue
+1514=Reatta
+1515=Regal
+1516=RendezVous
+1517=Rivera
+1518=Roadmaster
+1519=Skylark

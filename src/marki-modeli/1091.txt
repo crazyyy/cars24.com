@@ -1,0 +1,14 @@
+1092=Alhambra
+1903=Altea
+1093=Arosa
+1094=Cordoba
+2384=Exeo
+1095=Ibiza
+1096=Inca
+1097=Leon
+1098=Malaga
+1099=Marbella
+1100=Ronda
+1101=Terra
+1102=Toledo
+1103=Vario

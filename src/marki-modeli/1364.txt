@@ -1,0 +1,17 @@
+1365=88
+1366=Achieva
+1367=Alero
+1368=Aurora
+1369=Bravada
+1370=Calais
+1371=Ciera
+1372=Cutlass
+1373=Delta
+1374=Firenza
+1375=Intrigue
+1376=LSS
+1377=Omega
+1378=Regency
+1379=Silhouette
+1380=Tornado
+1381=Trofeo

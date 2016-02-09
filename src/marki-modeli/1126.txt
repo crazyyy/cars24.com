@@ -1,0 +1,14 @@
+1127=105
+1128=120
+1129=130
+2615=Citigo
+1130=Fabia
+1131=Favorit
+1132=Felicia
+1133=Forman
+1134=Octavia
+2396=Praktik
+2424=Rapid
+1943=Roomster
+1135=Superb
+2369=Yeti

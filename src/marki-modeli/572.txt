@@ -1,0 +1,14 @@
+573=Beta
+574=Dedra
+575=Delta
+576=Gamma
+577=Integral
+578=Kappa
+579=Lybra
+2368=Musa
+1915=Phedra
+580=Prisma
+581=Thema
+1558=Thesis
+582=Y
+583=Z

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://www.cars24.com/faq/ -->
+<html lang="en" data-livestyle-extension="available" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" hola_ext_inject="disabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><style>[href^="http://www.google.com/aclk?"]
+{display:none !important;}</style><script src="https://js-agent.newrelic.com/nr-768.min.js"></script><script src="https://bat.bing.com/bat.js" async=""></script><script src="https://s.yimg.com/wi/ytc.js" async=""></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KK6VXR"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYCVF5bDxAHXFVUAwUO"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <meta name="author" content="">        
+        <!-- Custom styles for this template -->
+        <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="Umoxc1RrR0wRHUcFEF8EBWsdYBkkICQFMTsANAItLSUbG3tFbRN/PA==">
+        <title>FAQ - Frequently Asked Questions by CARS24.com</title>
+<link href="./faq_files/font-awesome.css" rel="stylesheet" media="screen">
+<link href="./faq_files/static-main.css" rel="stylesheet" media="screen">
+<link href="./faq_files/css" rel="stylesheet">
+<link href="./faq_files/all-f29665466488fba6ea62f8ef30febf0c.css" rel="stylesheet">    </head>
+    <body class="">
+        <script>
+	  dataLayer = [];
+	</script>
+            <!-- Google Tag Manager -->
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-KK6VXR"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KK6VXR');</script>
+<!-- End Google Tag Manager -->
+
+        <!-- Google Code for Remarketing Tag -->
+        <script type="text/javascript">
+        /* <![CDATA[ */
+
+        var google_conversion_id = 947750834;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+
+        /* ]]> */
+        
+
+        </script>
+        <noscript>
+        &lt;div style="display:inline;"&gt;
+            &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/947750834/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+        &lt;/div&gt;
+        </noscript>
+        <!--header start-->
+        <header class="main-header">
+            <div class="container"> 
+                <div class="header-left">
+                  <div class="logo"><a href="https://www.cars24.com/"><img src="./faq_files/cars24-logo.jpg" width="187" alt="cars24"> </a></div>
+                </div>
+                <div class="header-right">
+                    <div class="topContactLineNUmber">
+                        <span>Service helpline:</span> <br>
+                        <span class="mobilefix">0124-4706400</span> 
+                        <span class="headingTime">(10AM-7PM)</span>
+					</div>
+					<div class="fright"><div class="mobhdrlogo"><img src="./faq_files/best-price.jpg" alt="Cars24.com"></div></div>
+                </div>
+            </div>
+        </header>
+        <!--header end-->
+        
+                        <script>
+
+</script>
+<div class="contact-container">
+  <div class="banner-bg">
+      <div class="banner_img">
+	    <div class="container" style="text-align:right;">
+		  <img src="./faq_files/faqbg.png" style="width:303px; max-width:100%;">
+		</div>
+	  </div>
+	  <div class="heading">
+	    <div class="container">
+           <h1 style="text-transform: none;  margin: 24px 0 24px 4px;">
+		      FAQs
+		   </h1>
+		</div>
+	  </div> 
+  </div> 
+<div class="clearfix"></div>
+</div>
+<div class="container_content">
+    <div class="container workarea">
+        <div class="faq" style="background:#fff;">
+                     <div id="accordion-first" class="clearfix">
+                        <div class="accordion" id="accordion2">
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapseOne" id="faq-list-one" aria-expanded="false">
+                                        <em class="fa fa-plus"></em>Q1. What are the benefits of selling my car at CARS24.com?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapseOne" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner" id="opendiv">
+                                        <p>Selling  a car is an extensive and uncertain process. One is never sure of their car’s  real market value. Listing online leads to more time consumption, multiple  calls, random meetings, price haggling etc.&nbsp;  CARS24.com makes selling a car an easy, fair and quick experience. If  you’re thinking about selling your used car, but don’t want the hassle that  comes along with it, you’re in good hands.<br>
+We  are an online platform with ambitions to change the way people sell used cars. </p>
+                                        <ul>
+                                          <li>Instant online valuation in 10 seconds</li>
+                                          <li>Free inspection at the CARS24 center</li>
+                                          <li>We Buy ANY Car In 30 Minutes</li>
+                                          <li>Better price than local dealer guaranteed</li>
+                                          <li>Instant payment within 24 hours</li>
+                                        </ul>
+                                        <p>Peace  of mind GUARANTEED! CARS24 is the quickest and the smartest way to sell your  car.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapseTwo" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q2. How does CARS24.com work?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapseTwo" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                      <p>Selling  your car through CARS24.com can be done in three simple steps… It couldn’t get  easier. <br><br>
+                                        <strong>Step 1: Instant  Online Valuation</strong><br>
+                                        On <a href="http://www.cars24.com/">www.cars24.com</a>, get an  initial quotation for your car by just following these steps:</p>
+                                      <ul>
+                                        <li>Enter your car's make, model and year.</li>
+                                        <li>Provide us with some more basic information, such as car variant  and kms driven.</li>
+                                        <li>Based on the information provided, we will provide you with an  initial market value of your car. </li>
+                                      </ul>
+                                      <p>The  online valuation does not consider other parameter for your car (color,  ownership serial no. etc.) It is based on your car being in near perfect  condition and does not reflect wear and tear or any further damages. It is  subject to physical inspection of the car at the CARS24 center.<br><br>
+                                        <strong>Step 2: Free  Inspection</strong><br>
+                                        Now  that you’ve done the free online valuation, then why not avail a free  inspection? Easily book your individual appointment for an on-site inspection  of your car at a CARS24 center near you. Appointment can be booked at our  website, or you can reach us at 0124-4706400. <br>
+                                        Make  sure that you bring all relevant documents of your car for instant payment. <br>
+                                        One  of our trusted and trained ‘car jockeys’ will inspect your car at our center by  going through our standard inspection checklist on more than 125 parameters ,  which also includes a short test drive. <br>
+                                        After  inspecting your car, we will give you our best offer. <br><br>
+                                         <strong>Step 3: Instant  Payment</strong><br>
+                                        Now  that you’ve got the best price for your car, what are you waiting for? We will  sign off on the documents and initiate the payment instantly. 30 minutes is all  we need!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapseThree" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q3. How do I book an appointment?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapseThree" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                      <p>It’s  simple! Log on to our website <a href="http://www.cars24.com/">www.cars24.com</a>, fill in the  basic details about your car and schedule an appointment at your nearest CARS24  center. <br>
+                                        Our  car consultant is just a call away at 0124-4706400, and will schedule an appointment  for you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapseFour" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q4. Is it mandatory to book an appointment?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapseFour" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                  If you book an appointment, you’re reserving your dedicated time with our car jockeys and car consultants. Personal attention to you and your car! If you reach our center at the scheduled time, you’ll find us waiting for you… However, we would love to have you over any time as per your convenience!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapseFive" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q5. Do I need to bring any documents for inspection?
+                                    </a>
+                                </div>
+<div style="height: 0px;" id="collapseFive" class="accordion-body collapse" aria-expanded="false">
+ <div class="accordion-inner">
+   <p><strong>It  is important that you bring the following documents with you for the  Inspection:</strong></p>
+   <div class="container">
+	<div class="row">
+	  <div class="col-md-6 col-lg-6">
+		   
+				<strong>To get the best price, definitely bring:</strong> 
+				<p>1. Original RC (Mandatory)<br>
+			  2. Insurance Certificate / Cover Note /    Policy<br>
+			  3. Original Invoice<br>
+			  4. Duplicate Keys<br>
+			  5. Service Manual<br>
+			  6. Last Service Receipt<br>
+			  7. Extended Warranty Certificate </p>
+	  </div>
+     <div class="col-md-6 col-lg-6">
+		 <p><strong>For instant payment you must bring:</strong><br>
+		  1. PAN card of the registered owner<br>
+		  2. 4 Self attested photos of registered    owner<br>
+		  3. Registered owner's:<br>
+		  &nbsp;&nbsp;&nbsp;&nbsp;a. Aadhar Card or<br>
+		  &nbsp;&nbsp;&nbsp;&nbsp;b. Voter ID Card or<br>
+		  &nbsp;&nbsp;&nbsp;&nbsp;c. Passport<br>
+		  4. Financial documents in case of financed car</p>
+		
+	 </div>
+	 </div>
+  </div>
+   <p>Do remember to take out all of your personal belongings from your car before your inspection!</p>
+</div>
+                            </div> 
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapseSix" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q6. Do I need to pay anything for Inspection?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapseSix" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>Not at all! This service is absolutely free of cost for all our customers.</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapseSeven" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q7. I have not received my car valuation email.
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapseSeven" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>The mail usually arrives within a minute. However, if you still have not received it, either of the following may have happened:</p>
+                                        <ul>
+                                            <li>It went in your Junk or Spam. Please check if the mail has arrived there.</li>
+                                            <li>You may have entered incorrect email ID. In this case you can attempt to take another quotation by entering correct email ID.
+											</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapseEight" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q8. How do you ascertain the right price for my car?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapseEight" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+										 The instant online valuation mentioned on our website is based on our in-house pricing algorithm, which takes into account the historical market value for the successful transactions of the same car variant. However, the exact value of the car can only be assessed after a physical inspection of your car by our trained ‘car jockeys’. </p>
+                                         <p>
+Factors such as condition of the car, usage of the car and market intelligence incorporating current demand and supply situation play an important role in the generation of the best price.  Our nationwide network of more than 10,000 buyers ensures that we provide the best price for your car!
+
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapseNine" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q9. How can I be sure that I will receive payment?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapseNine" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+										 We are the most trusted partner for thousands of customers to sell their car! That’s because unlike unauthorized &amp; local dealers, we sign a legally binding purchase agreement as soon as the deal is finalized. It contains complete details of the transaction and clearly defined terms and conditions. We pay you immediately, and the way you like it -NEFT/RTGS/IMPS, Cheque or DD. Peace of mind guaranteed! 
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse10" aria-expanded="true">
+                                        <em class="fa-minus fa"></em>Q10. Is it possible to sell a car registered in the name of a company? 
+                                    </a>
+                                </div>
+                                <div id="collapse10" class="accordion-body collapse in" aria-expanded="true">
+                                    <div class="accordion-inner">
+                                        <p>Yes,  absolutely! In addition to the documents highlighted earlier, please also bring  along:</p>
+<ol>
+  <li>Company  address Proof (Electricity bill, Landline bill, Company registration letter)</li>
+  <li>Blank  Company letter head - 3 (Stamped and Signed by Signing authority)</li>
+  <li>Board  resolution copy or MOU (memorandum of understanding) or certificate of  incorporation or certificate of registration signed and stamped by all company  directors. (Any of these)</li>
+  <li>Signing  authority’s pan card copy</li>
+  <li>Form 28 (4  copies), 29 (2 copies), 30 (2 copies) signed and stamped by company authorized  signatory.</li>
+  <li>Company’s pan  card</li>
+  <li>Aadhar card  letter on company letterhead authorizing you to sign on company’s behalf. </li>
+</ol>
+                                    </div>
+                                </div>
+                            </div>						  
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse11" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q11. I still have a loan against my car, can you buy it?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse11" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+										Sure, we can! Simply bring along a current dated foreclosure letter issued by the bank, and we will pay back the loan on your car! The settlement amount will be deducted from the amount paid to you for your car. Alternatively, you can also settle the loan before selling the car to us. 
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse12" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q12. Do you buy a car that is registered in other states?
+
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse12" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+										 We Buy ANY Car… Quite literally! From Kashmir to Kanyakumari… You name it and we buy it!
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse13" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q13. Can I get my car exchanged via CARS24?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse13" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>We are focused on solving a problem, millions of customers round the globe are facing every year – to sell their car hassle-free, through fair and transparent pricing, and get paid instantly! Hence, we only buy cars from customers.
+ </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse14" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q14. I think I would get a better deal if I exchange my car, instead of simply selling it.
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse14" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>Exchanging your car instead of simply selling it can result in a really bad deal for you. Selling and buying from the same dealer ties your transaction and reduces the room for negotiations. The more the dealer offers you for your used car, the lesser discount he will offer you on your new car. </p>
+<p>Selling your car to CARS24.com puts you in a stronger position. You get the actual value for your car as cash in your pocket, and get to drive the negotiations while buying your new car. And why would you want the hassle of ownership transfer? It’s a win-win deal for you!
+
+</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse15" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q15. Do you buy a car that is registered outside India?
+
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse15" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>Not yet. But we’re working on it! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse16" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q16. My car does not run anymore. Will you still buy it?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse16" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>Why not? Of course we will! However, since we don’t offer doorstep services you’ll need to bring the car to the nearest CARS24 center for a physical inspection. Do remember, though, that the value of your car will depreciate by more than 80% market value of a running car. We do guarantee that we’ll offer a better price than your local dealer. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse17" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q17. Do you buy commercial vehicles?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse17" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>We don’t buy commercial vehicles, but if you have a privately owned car that you wish to sell… We could be of great help!</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse18" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q18. Do you buy two-wheelers?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse18" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>Not currently, but nobody knows what lies ahead.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse19" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q19. Do you have home inspection facility? </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse19" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+										   Due to an overwhelming response, we are currently not providing home inspection facility.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse20" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q20. Where are your stores located? </a>
+                                </div>                                
+                                    <div style="height: 0px;" id="collapse20" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>We're present at multiple locations across Delhi/NCR, Mumbai, Bengaluru and Hyderabad!</p>
+                                       
+                                            <p style="font-size:20px; margin-bottom: 0px; padding-top: 10px;"><b>Bengaluru</b></p><ul><li> HBR Layout,669/J ,1st floor, 1st Main 80 Ft road, Next to HDFC bank on 1st main road,2nd Block, 1st Stage, HBR layout,Bengaluru-560043 </li></ul><ul><li> HSR layout,L-151, 14th Cross, 5th Main,6th Sector, HSR Layout,Bengaluru-560102 </li></ul><ul><li> Domlur,258, 270 and 271, situated at 14th Cross,Domlur Layout,Bengaluru-560071 </li></ul><ul><li> Banashankari,1589/B, Ground Floor, 100 Feet Ring Road, Banashankari Stage II,Bengaluru-560070 </li></ul><ul><li> Malleshwaram,1st Floor, No 46/5, 8th Main Road,Opposite Canara Bank, Malleshwaram,Bengaluru-560055 </li></ul><p style="font-size:20px; margin-bottom: 0px; padding-top: 10px;"><b>Mumbai</b></p><ul><li> Bandra West,Shop No.17, ground floor Block “A”, Gopal Mansion Cooperative Housing Society Ltd,235-A, Turner Road, towards station road, Bandra (West),Mumbai-400050 </li></ul><ul><li> Goregaon,Shop No A/9, Krishna Ambica Arcade, SV road, Goregaon West,Opp Bata Showroom Near Filmistan Studio,Mumbai-400062 </li></ul><ul><li> Vashi,Shop No. 3 &amp; 4, Maple, Plot No. 715,Sector 11, Vashi, Navi Mumbai,Mumbai-400703 </li></ul><ul><li> Worli,Gala No.6 Part, 55 Dr. E. Moses Road,Next to Pergo Flooring &amp; Furniturewala Showroom, Worli,Mumbai-400018 </li></ul><p style="font-size:20px; margin-bottom: 0px; padding-top: 10px;"><b>New Delhi</b></p><ul><li> Lajpat Nagar,11 Jalvihar road, near Jalvihar gol chakkar,Lajpat Nagar II,New Delhi-110024 </li></ul><ul><li> Shakti Nagar,Ground Floor, 30/5 Shakti Nagar,Nangia Park,New Delhi-110007 </li></ul><ul><li> JanakPuri,2/4 A prem nagar janakpuri,above syndicate bank,New Delhi-110058 </li></ul><ul><li> Saket,25-A, Hauz Rani,Opposite saket city hospital,New Delhi-110017 </li></ul><ul><li> Patel Nagar,7/11, Balraj Khanna Marg, East Patel Nagar,Near Patel Nagar metro station, Patel Nagar,New Delhi-110008 </li></ul><ul><li> Dwarka,Plot No. 24, Dwarka Sec 20,Near Toyota showroom,New Delhi-110075 </li></ul><ul><li> Karkardooma,Plot No. 4, Priya Enclave, Karkardooma,New Delhi-110092 </li></ul><p style="font-size:20px; margin-bottom: 0px; padding-top: 10px;"><b>Hyderabad</b></p><ul><li> Somajiguda,1st Floor, Span Solitaire, Above Donut House,Rajbhavan Road, Somajiguda,Hyderabad-500082 </li></ul><ul><li> Jubilee Hills,Ground Floor, Haveli Hotel Inn, Beside Peddama Temple Main gate,Road No.55 Jubilee Hills,Hyderabad-500033 </li></ul><ul><li> Gachibowli,1-58/5/A/3, 3rd Floor,Opp. Furniture City, Above Bank of India, Below Banana Leaf, Gachibowli,Hyderabad-500032 </li></ul><p style="font-size:20px; margin-bottom: 0px; padding-top: 10px;"><b>Gurgaon</b></p><ul><li> Golf Course Extension,Indian Oil filling station,Golf Course Extension Road, Sector 62,Gurgaon-122102 </li></ul><ul><li> Cyber City,S4 Car Care, Indian Oil Petrol Pump, Cyber City,Near Building No. 5, DLF Phase - 3,Gurgaon-122002 </li></ul><p style="font-size:20px; margin-bottom: 0px; padding-top: 10px;"><b>Pune</b></p><ul><li> Baner,Office no 102/103, Yugal Pranavi, Sr. No. 22/10B/15 Opp. to Crosswind,Off Baner Road, Alongside Amar Paradigm Balewadi,Pune-411045 </li></ul>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse21" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q21. What are the working hours of store?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse21" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+                                           We’re open 365 days a year from 10:00 AM to 6:00 PM! Always available at your service as per your convenient time.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse22" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q22. How long is the quotation valid for?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse22" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+										 Online quotations are valid for 7 days. However, final quotation shared post inspection is valid for 24 hours. The automobile space is very dynamic and is subject to constant changes. For the best deal, we request you to speed up the process on priority!
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse23" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q23. What happens if RC is not in my name? </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse23" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+											The registration certificate has the details of the registered owner of the car. We only purchase a vehicle through its registered owner to prevent fraud. The payment is also made only to the current registered owner of the vehicle, to provide the safest car selling experience to our customers.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse24" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>
+                                        Q24. What if I don’t have all documents handy after inspection and the deal is finalized?
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse24" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+										We do insist that you carry the relevant document for a swift transaction, nevertheless if you forget… No problem! We’ll sign off the purchase agreements subject to completion of all pending documents. However, we’ll initiate the payment only once you provide all required documents.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse25" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q25. My car is in my father’s name but he is no more.  Can you still buy it? 
+                                    </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse25" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+											We’re very sorry for your loss. However, to ensure the safest car selling experience to our customers, we only buy a car for which the registered owner’s signature and ID proof are available.  So please approach the local RTO to get the car transferred in your name, and thereafter, we’ll happily buy your car from you.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse26" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q26. My car is in my uncle’s name and he lives abroad.  Will you buy his car? </a>
+                                </div>
+                                <div style="height: 0px;" id="collapse26" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+											We are happy to buy any car for which valid documents are available! To provide the safest car selling experience to our customers, we need the registered owner’s signature and ID proof to buy a vehicle. Hence, as a registered owner, we need your uncle to be present to sign the documents for selling his car.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse27" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q27. What happens to my car after you buy it?</a>
+                                </div>
+                                <div style="height: 0px;" id="collapse27" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+											This is the most important thing to know. Glad you asked. Selling your car is not about cash but ensuring ownership is transferred so that you have no liability associated with the car. Local dealers often don’t transfer the ownership for a long time and this means anything wrong happening with your car could still be your liability while you don’t own it anymore.</p><p>
+We hence have a trusted set of partners, from OEMs, leasing companies to corporates and organized showrooms to ensure that your car is in safe hands and that your liability is completely closed when you sell your car
+
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse28" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q28. Can the online value of my car differ from the actual quote for my car?</a>
+                                </div>
+                                <div style="height: 0px;" id="collapse28" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+											Yes. The initial quotation mentioned on our website is based on our in-house pricing algorithm, which takes into account the historical market value for the successful transactions of the same car variant. However, the exact value of the car can only be assessed after an inspection by our professional car jockeys. Factors such as condition of the car, usage of the car and market intelligence incorporating current demand and supply situation play an important role in the generation of the best price.  Our nationwide network ensures that we provide the best price for your car!
+
+										</p>
+                                    </div>
+                                </div>
+                            </div>	
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="https://www.cars24.com/faq/#collapse29" aria-expanded="false">
+                                        <em class=" fa fa-plus"></em>Q29. 
+                                        Are there any service charges for the sale of my vehicle?</a>
+                                </div>
+                                <div style="height: 0px;" id="collapse29" class="accordion-body collapse" aria-expanded="false">
+                                    <div class="accordion-inner">
+                                        <p>
+											You pay absolutely no fees for availing any of our services! Could it get any better? It’s absolutely free.
+										</p>
+                                    </div>
+                                </div>
+                            </div>								
+                        </div><!-- end accordion -->
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+           <!--footer start-->
+        <footer class="main-footer">
+            <div class="container">
+                <nav class="footerLink">
+				<a href="https://www.cars24.com/contact">Contact Us</a> /
+                    
+	<a href="https://www.cars24.com/about-us">About Us</a> /					
+                    
+             
+                    <a href="https://www.cars24.com/centres">Centres</a> /
+
+					       <a href="https://www.cars24.com/faq">FAQ</a> /
+				
+					<a href="https://www.cars24.com/testimonials">Testimonials</a> /
+						<a href="https://www.cars24.com/blog">Blog</a> /
+						<a href="https://www.cars24.com/privacy-policy">Privacy Policy</a> 
+					
+
+										
+                </nav>
+                <div class="copyrighttxt">© 2016 CARS24.COM</div>
+            </div>
+        </footer>
+<script src="https://www.googleadservices.com/pagead/conversion.js"></script>
+<script src="./faq_files/all-e155db3155ea1df976ffa55b4141e2b4.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+var iconOpen = 'fa fa-minus',
+                iconClose = 'fa fa-plus';
+
+       jQuery(document).on('show.bs.collapse hide.bs.collapse', '.accordion', function (e) {            
+            var target = jQuery(e.target)
+            target.siblings('.accordion-heading')
+                    .find('em').toggleClass(iconOpen + ' ' + iconClose);
+            if (e.type == 'show') {
+                $('#accordion2').find('.collapse.in').collapse('hide');
+                    target.prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+			}
+            if (e.type == 'hide')
+                jQuery(this).find('.accordion-toggle').not(target).removeClass('active');
+        });
+        jQuery('#faq-list-one').trigger('click');
+
+});</script>        <!-- FlexSlider -->
+        
+
+          <script type="application/javascript" defer="">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10001995577965','properties':{'pixelId':'430749'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script> 
+    <noscript>
+    &lt;img src="https://sp.analytics.yahoo.com/spp.pl?a=10001995577965&amp;.yp=430749"/&gt; 
+    </noscript>
+    <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5065002"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript>&lt;img src="//bat.bing.com/action/0?ti=5065002&amp;Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /&gt;</noscript>
+    
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"77c3c1c49e","applicationID":"7846449","transactionName":"MwRaNkAHXEpRBhFdXApObRBbSVtXVAAdGkMMEQ==","queueTime":0,"applicationTime":41,"atts":"H0NZQAgdT0Q=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-768.min.js"}</script>
+
+</body></html>
